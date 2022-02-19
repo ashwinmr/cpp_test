@@ -11,11 +11,10 @@ cmake ..
 
 # Build
 ```
-cmake --build .
+cmake --build build/
 ```
 
 # Run
 ```
-cd build/Debug
-./cpp_test.exe
+./build/Debug/cpp_test.exe
 ```

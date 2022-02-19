@@ -4,8 +4,14 @@ cmake_minimum_required( VERSION 3.21 )
 # Project name
 project(cpp_test)
 
-# Include all dependencies
+# Include directories
 include_directories(./include)
 
+# Library directories
+link_directories(./lib/64-bit/msvc64)
+
 # Add executable
-add_executable(cpp_test ./src/main.cpp)
+add_executable(cpp_test ./src/main.cpp ./src/testing.c)
+
+# Target libraries
+target_link_libraries(cpp_test nilibddc)
