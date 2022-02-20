@@ -15,3 +15,7 @@ add_executable(cpp_test ./src/main.cpp ./src/testing.c)
 
 # Target libraries
 target_link_libraries(cpp_test nilibddc)
+
+# Copy binary files
+# Source is relative to current folder and destination is relative to build
+file(COPY ./bin/64-bit/ DESTINATION ./Debug/)
