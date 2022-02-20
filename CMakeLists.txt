@@ -1,6 +1,9 @@
 # Cmake version to be used
 cmake_minimum_required( VERSION 3.21 )
 
+# Set platform
+set(CMAKE_GENERATOR_PLATFORM x64)
+
 # Project name
 project(cpp_test)
 
